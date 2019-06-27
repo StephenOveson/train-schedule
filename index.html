@@ -19,30 +19,89 @@
         </div>
     </header>
     <div class="container container-fluid mt-2">
-        <div class="input-group flex-nowrap w-75 m-auto">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="addon-wrapping">Train Name</span>
-            </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                aria-describedby="addon-wrapping">
-        </div>
-        <div class="input-group flex-nowrap w-75 m-auto">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="addon-wrapping">Destination</span>
-            </div>
-            <input type="text" class="form-control" placeholder="Destination" aria-label="Destination"
-                aria-describedby="addon-wrapping">
-        </div>
-        <div class="input-group flex-nowrap w-75 m-auto">
-            <div class="input-group-prepend">
-                <span class="input-group-text pr-4" id="addon-wrapping">Train Time</span>
-            </div>
-            <input type="text" class="form-control" placeholder="Train Time" aria-label="Train-time"
-                aria-describedby="addon-wrapping">
-        </div>
+        <table class="table table-striped w-75 m-auto">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency</th>
+                    <th scope="col">Train Time</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
 
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container container-fluid mt-2">
+        <form>
+            <div class="input-group flex-nowrap w-75 m-auto">
+                <h4 class="container container-fluid mb-0 bg-primary rounded-top text-white">Add Train</h4>
+            </div>
+            <div class="input-group flex-nowrap w-75 m-auto">
+                <div class="input-group-prepend">
+                    <span class="input-group-text col-15" id="addon-wrapping">Train Name</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap w-75 m-auto">
+                <div class="input-group-prepend">
+                    <span class="input-group-text col-15" id="addon-wrapping">Destination</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Destination" aria-label="Destination"
+                    aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap w-75 m-auto">
+                <div class="input-group-prepend">
+                    <span class="input-group-text col-15" id="addon-wrapping">Frequency&nbsp</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Frequency (Min)" aria-label="Frequency"
+                    aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap w-75 m-auto">
+                <div class="input-group-prepend">
+                    <span class="input-group-text col-15" id="addon-wrapping">First Train Time</span>
+                </div>
+                <input type="text" class="form-control" placeholder="First Train Time Military Time HH:MM"
+                    aria-label="Train-time" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap w-75 m-auto">
+                <button class="btn btn-outline-primary btn-block" id="submit-train">Submit Train</button>
+            </div>
+        </form>
     </div>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <script src="https://firebase.google.com/docs/web/setup#config-web-app"></script>
+
     <script src="assets/js/schedule.js"></script>
 </body>
 
